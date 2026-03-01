@@ -12,7 +12,7 @@ def train_model():
     try:
         df = pd.read_csv('Loan_Default.csv')
     except FileNotFoundError:
-        print("dataset.csv not found in this folder.")
+        print("Loan_Default.csv not found in this folder.")
         return
 
     selected_features = ['Credit_Score', 'LTV', 'dtir1', 'loan_type', 'age', 'Region']
